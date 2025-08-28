@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stay Focused — Shorts Shield</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="card__header">
+        <h1 id="headline">Ради твоего блага</h1>
+        <p class="subtitle" id="sub">Эта короткая вертикалка — не то, зачем ты сюда пришёл.</p>
+      </header>
+      <section class="message" id="message"></section>
+      <section class="links" id="links"></section>
+      <section class="actions">
+        <button id="openWatch" class="btn">Открыть как обычное видео</button>
+        <button id="openAnyway" class="btn btn--ghost">Открыть всё равно</button>
+        <div class="snooze">
+          <label for="snoozeMins">Пауза:</label>
+          <select id="snoozeMins">
+            <option value="5">5 мин</option>
+            <option value="15" selected>15 мин</option>
+            <option value="30">30 мин</option>
+            <option value="60">1 час</option>
+          </select>
+          <button id="snoozeBtn" class="btn btn--ghost">Пауза</button>
+          <button id="clearSnoozeBtn" class="btn btn--ghost">Снять паузу</button>
+        </div>
+      </section>
+      <footer class="meta"><small>Shorts Shield • <a href="options.html" target="_blank">настройки</a></small></footer>
+    </section>
+  </main>
+  <script src="blocked.js" type="module"></script>
+</body>
+</html>

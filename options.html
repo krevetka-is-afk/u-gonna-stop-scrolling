@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shorts Shield — Настройки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="card__header">
+        <h1>Настройки</h1>
+        <p class="subtitle">Задайте свою фразу и ссылки. Конфиг хранится в <code>chrome.storage.sync</code> или берётся из <code>config.json</code>.</p>
+      </header>
+      <form id="form">
+        <label>Заголовок<input id="headline" type="text" placeholder="Ради твоего блага"></label>
+        <label>Подзаголовок<input id="subtitle" type="text" placeholder="Эта короткая вертикалка — не то, зачем ты сюда пришёл."></label>
+        <label>Сообщение<textarea id="message" rows="3" placeholder="Сохраняй фокус и возвращайся к важному."></textarea></label>
+        <label>Полезные ссылки (JSON-массив объектов { title, url })<textarea id="links" rows="8" placeholder='[{"title":"Мой плейлист","url":"https://..."},{"title":"Документация","url":"https://developer.chrome.com/docs/extensions"}]'></textarea></label>
+        <div class="actions">
+          <button class="btn" id="save" type="submit">Сохранить</button>
+          <button class="btn btn--ghost" id="reset" type="button">Сбросить к дефолту</button>
+          <button class="btn btn--ghost" id="export" type="button">Экспорт JSON</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
